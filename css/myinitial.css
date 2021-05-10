@@ -1,0 +1,588 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+.nanumsquare {
+    font-family: 'NanumSquare', sans-serif !important;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+.nanumsquare {
+    font-family: 'NanumSquare', sans-serif !important;
+}
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{ font-family: 'Noto Sans KR' sans-serif; color: #666666; }
+body{ color: #666666; }
+*{ margin: 0; padding: 0; }
+ul,ol{ list-style: none; }
+a{ text-decoration: none; color: #666666; }
+
+html{
+	color:#000;
+	background:#FFF;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+	*font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset { display: none; }
+
+/* 폰트 컬러 */
+.ftcolor01{color:#32a2db}
+.ftcolor02{color:#e28223}
+.ftcolor03{color:#6e73dd}
+.ftcolor04{color:#ff194a}
+.ftcolor05{color:#ccc}
+.ftcolor06{color:#666;}
+
+.text-color-01 { color: #c27a34; }
+
+.text-color-02 { color: #383431; }
+
+.text-color-sub { color: #666666; }
+
+.text-color-sub2 { color: #ccc; }
+
+
+/* 폰트사이즈 */
+.nsk-font { font-family: 'Noto Sans KR'; }
+
+.mtg-font { font-family: 'Montaga'; font-weight: 400; }
+
+.mts-font { font-family: 'Montserrat'; }
+
+/*font-size*/
+.fs-10 { font-size: 10px; }
+
+.fs-12 { font-size: 12px; }
+
+.fs-14 { font-size: 14px; }
+
+.fs-16 { font-size: 16px; }
+
+.fs-18 { font-size: 18px; }
+
+.fs-20 { font-size: 20px; }
+
+.fs-22 { font-size: 22px; }
+
+.fs-24 { font-size: 24px; }
+
+.fs-26 { font-size: 26px; }
+
+.fs-28 { font-size: 28px; }
+
+.fs-30 { font-size: 30px; }
+
+.fs-32 { font-size: 32px; }
+
+.fs-34 { font-size: 34px; }
+
+.fs-36 { font-size: 36px; }
+
+.fs-38 { font-size: 38px; }
+
+.fs-40 { font-size: 40px; }
+
+.fs-42 { font-size: 42px; }
+
+.fs-44 { font-size: 44px; }
+
+.fs-46 { font-size: 46px; }
+
+.fs-48 { font-size: 48px; }
+
+.fs-50 { font-size: 50px; }
+
+.fs-52 { font-size: 52px; }
+
+.fs-54 { font-size: 54px; }
+
+.fs-56 { font-size: 56px; }
+
+.fs-58 { font-size: 58px; }
+
+.fs-60 { font-size: 60px; }
+
+.fs-62 { font-size: 62px; }
+
+.fs-64 { font-size: 64px; }
+
+.fs-66 { font-size: 66px; }
+
+.fs-68 { font-size: 68px; }
+
+.fs-70 { font-size: 70px; }
+
+.fs-72 { font-size: 72px; }
+
+.fs-74 { font-size: 74px; }
+
+.fs-76 { font-size: 76px; }
+
+.fs-78 { font-size: 78px; }
+
+.fs-80 { font-size: 80px; }
+
+.fs-82 { font-size: 82px; }
+
+.fs-84 { font-size: 84px; }
+
+.fs-86 { font-size: 86px; }
+
+.fs-88 { font-size: 88px; }
+
+.fs-90 { font-size: 90px; }
+
+.fs-92 { font-size: 92px; }
+
+.fs-94 { font-size: 94px; }
+
+.fs-96 { font-size: 96px; }
+
+.fs-98 { font-size: 98px; }
+
+.fs-100 { font-size: 100px; }
+
+@media all and (max-width: 1200px) { .fs-10 { font-size: 8px; }
+  .fs-12 { font-size: 9px; }
+  .fs-14 { font-size: 11px; }
+  .fs-16 { font-size: 12px; }
+  .fs-18 { font-size: 14px; }
+  .fs-20 { font-size: 15px; }
+  .fs-22 { font-size: 17px; }
+  .fs-24 { font-size: 18px; }
+  .fs-26 { font-size: 20px; }
+  .fs-28 { font-size: 21px; }
+  .fs-30 { font-size: 23px; }
+  .fs-32 { font-size: 24px; }
+  .fs-34 { font-size: 26px; }
+  .fs-36 { font-size: 27px; }
+  .fs-38 { font-size: 29px; }
+  .fs-40 { font-size: 30px; }
+  .fs-42 { font-size: 32px; }
+  .fs-44 { font-size: 33px; }
+  .fs-46 { font-size: 35px; }
+  .fs-48 { font-size: 36px; }
+  .fs-50 { font-size: 38px; }
+  .fs-52 { font-size: 39px; }
+  .fs-54 { font-size: 41px; }
+  .fs-56 { font-size: 42px; }
+  .fs-58 { font-size: 44px; }
+  .fs-60 { font-size: 45px; }
+  .fs-62 { font-size: 47px; }
+  .fs-64 { font-size: 48px; }
+  .fs-66 { font-size: 50px; }
+  .fs-68 { font-size: 51px; }
+  .fs-70 { font-size: 53px; }
+  .fs-72 { font-size: 54px; }
+  .fs-74 { font-size: 56px; }
+  .fs-76 { font-size: 57px; }
+  .fs-78 { font-size: 59px; }
+  .fs-80 { font-size: 60px; }
+  .fs-82 { font-size: 62px; }
+  .fs-84 { font-size: 63px; }
+  .fs-86 { font-size: 65px; }
+  .fs-88 { font-size: 66px; }
+  .fs-90 { font-size: 68px; }
+  .fs-92 { font-size: 69px; }
+  .fs-94 { font-size: 71px; }
+  .fs-96 { font-size: 72px; }
+  .fs-98 { font-size: 74px; }
+  .fs-100 { font-size: 75px; }
+  .m-fs-10 { font-size: 8px; }
+  .m-fs-12 { font-size: 9px; }
+  .m-fs-14 { font-size: 11px; }
+  .m-fs-16 { font-size: 12px; }
+  .m-fs-18 { font-size: 14px; }
+  .m-fs-20 { font-size: 15px; }
+  .m-fs-22 { font-size: 17px; }
+  .m-fs-24 { font-size: 18px; }
+  .m-fs-26 { font-size: 20px; }
+  .m-fs-28 { font-size: 21px; }
+  .m-fs-30 { font-size: 23px; }
+  .m-fs-32 { font-size: 24px; }
+  .m-fs-34 { font-size: 26px; }
+  .m-fs-36 { font-size: 27px; }
+  .m-fs-38 { font-size: 29px; }
+  .m-fs-40 { font-size: 30px; }
+  .m-fs-42 { font-size: 32px; }
+  .m-fs-44 { font-size: 33px; }
+  .m-fs-46 { font-size: 35px; }
+  .m-fs-48 { font-size: 36px; }
+  .m-fs-50 { font-size: 38px; }
+  .m-fs-52 { font-size: 39px; }
+  .m-fs-54 { font-size: 41px; }
+  .m-fs-56 { font-size: 42px; }
+  .m-fs-58 { font-size: 44px; }
+  .m-fs-60 { font-size: 45px; }
+  .m-fs-62 { font-size: 47px; }
+  .m-fs-64 { font-size: 48px; }
+  .m-fs-66 { font-size: 50px; }
+  .m-fs-68 { font-size: 51px; }
+  .m-fs-70 { font-size: 53px; }
+  .m-fs-72 { font-size: 54px; }
+  .m-fs-74 { font-size: 56px; }
+  .m-fs-76 { font-size: 57px; }
+  .m-fs-78 { font-size: 59px; }
+  .m-fs-80 { font-size: 60px; }
+  .m-fs-82 { font-size: 62px; }
+  .m-fs-84 { font-size: 63px; }
+  .m-fs-86 { font-size: 65px; }
+  .m-fs-88 { font-size: 66px; }
+  .m-fs-90 { font-size: 68px; }
+  .m-fs-92 { font-size: 69px; }
+  .m-fs-94 { font-size: 71px; }
+  .m-fs-96 { font-size: 72px; }
+  .m-fs-98 { font-size: 74px; }
+  .m-fs-100 { font-size: 75px; } }
+
+@media all and (max-width: 768px) { .fs-10 { font-size: 7px; }
+  .fs-12 { font-size: 8px; }
+  .fs-14 { font-size: 9px; }
+  .fs-16 { font-size: 10px; }
+  .fs-18 { font-size: 12px; }
+  .fs-20 { font-size: 13px; }
+  .fs-22 { font-size: 14px; }
+  .fs-24 { font-size: 16px; }
+  .fs-26 { font-size: 17px; }
+  .fs-28 { font-size: 18px; }
+  .fs-30 { font-size: 20px; }
+  .fs-32 { font-size: 21px; }
+  .fs-34 { font-size: 22px; }
+  .fs-36 { font-size: 23px; }
+  .fs-38 { font-size: 25px; }
+  .fs-40 { font-size: 26px; }
+  .fs-42 { font-size: 27px; }
+  .fs-44 { font-size: 29px; }
+  .fs-46 { font-size: 30px; }
+  .fs-48 { font-size: 31px; }
+  .fs-50 { font-size: 33px; }
+  .fs-52 { font-size: 34px; }
+  .fs-54 { font-size: 35px; }
+  .fs-56 { font-size: 36px; }
+  .fs-58 { font-size: 38px; }
+  .fs-60 { font-size: 39px; }
+  .fs-62 { font-size: 40px; }
+  .fs-64 { font-size: 42px; }
+  .fs-66 { font-size: 43px; }
+  .fs-68 { font-size: 44px; }
+  .fs-70 { font-size: 46px; }
+  .fs-72 { font-size: 47px; }
+  .fs-74 { font-size: 48px; }
+  .fs-76 { font-size: 49px; }
+  .fs-78 { font-size: 51px; }
+  .fs-80 { font-size: 52px; }
+  .fs-82 { font-size: 53px; }
+  .fs-84 { font-size: 55px; }
+  .fs-86 { font-size: 56px; }
+  .fs-88 { font-size: 57px; }
+  .fs-90 { font-size: 59px; }
+  .fs-92 { font-size: 60px; }
+  .fs-94 { font-size: 61px; }
+  .fs-96 { font-size: 62px; }
+  .fs-98 { font-size: 64px; }
+  .fs-100 { font-size: 65px; }
+  .m-fs-10 { font-size: 7px; }
+  .m-fs-12 { font-size: 8px; }
+  .m-fs-14 { font-size: 9px; }
+  .m-fs-16 { font-size: 10px; }
+  .m-fs-18 { font-size: 12px; }
+  .m-fs-20 { font-size: 13px; }
+  .m-fs-22 { font-size: 14px; }
+  .m-fs-24 { font-size: 16px; }
+  .m-fs-26 { font-size: 17px; }
+  .m-fs-28 { font-size: 18px; }
+  .m-fs-30 { font-size: 20px; }
+  .m-fs-32 { font-size: 21px; }
+  .m-fs-34 { font-size: 22px; }
+  .m-fs-36 { font-size: 23px; }
+  .m-fs-38 { font-size: 25px; }
+  .m-fs-40 { font-size: 26px; }
+  .m-fs-42 { font-size: 27px; }
+  .m-fs-44 { font-size: 29px; }
+  .m-fs-46 { font-size: 30px; }
+  .m-fs-48 { font-size: 31px; }
+  .m-fs-50 { font-size: 33px; }
+  .m-fs-52 { font-size: 34px; }
+  .m-fs-54 { font-size: 35px; }
+  .m-fs-56 { font-size: 36px; }
+  .m-fs-58 { font-size: 38px; }
+  .m-fs-60 { font-size: 39px; }
+  .m-fs-62 { font-size: 40px; }
+  .m-fs-64 { font-size: 42px; }
+  .m-fs-66 { font-size: 43px; }
+  .m-fs-68 { font-size: 44px; }
+  .m-fs-70 { font-size: 46px; }
+  .m-fs-72 { font-size: 47px; }
+  .m-fs-74 { font-size: 48px; }
+  .m-fs-76 { font-size: 49px; }
+  .m-fs-78 { font-size: 51px; }
+  .m-fs-80 { font-size: 52px; }
+  .m-fs-82 { font-size: 53px; }
+  .m-fs-84 { font-size: 55px; }
+  .m-fs-86 { font-size: 56px; }
+  .m-fs-88 { font-size: 57px; }
+  .m-fs-90 { font-size: 59px; }
+  .m-fs-92 { font-size: 60px; }
+  .m-fs-94 { font-size: 61px; }
+  .m-fs-96 { font-size: 62px; }
+  .m-fs-98 { font-size: 64px; }
+  .m-fs-100 { font-size: 65px; } }
+
+@media all and (max-width: 470px) { .fs-10 { font-size: 5px; }
+  .fs-12 { font-size: 6px; }
+  .fs-14 { font-size: 7px; }
+  .fs-16 { font-size: 8px; }
+  .fs-18 { font-size: 9px; }
+  .fs-20 { font-size: 10px; }
+  .fs-22 { font-size: 11px; }
+  .fs-24 { font-size: 12px; }
+  .fs-26 { font-size: 13px; }
+  .fs-28 { font-size: 14px; }
+  .fs-30 { font-size: 15px; }
+  .fs-32 { font-size: 16px; }
+  .fs-34 { font-size: 17px; }
+  .fs-36 { font-size: 18px; }
+  .fs-38 { font-size: 19px; }
+  .fs-40 { font-size: 20px; }
+  .fs-42 { font-size: 21px; }
+  .fs-44 { font-size: 22px; }
+  .fs-46 { font-size: 23px; }
+  .fs-48 { font-size: 24px; }
+  .fs-50 { font-size: 25px; }
+  .fs-52 { font-size: 26px; }
+  .fs-54 { font-size: 27px; }
+  .fs-56 { font-size: 28px; }
+  .fs-58 { font-size: 29px; }
+  .fs-60 { font-size: 30px; }
+  .fs-62 { font-size: 31px; }
+  .fs-64 { font-size: 32px; }
+  .fs-66 { font-size: 33px; }
+  .fs-68 { font-size: 34px; }
+  .fs-70 { font-size: 35px; }
+  .fs-72 { font-size: 36px; }
+  .fs-74 { font-size: 37px; }
+  .fs-76 { font-size: 38px; }
+  .fs-78 { font-size: 39px; }
+  .fs-80 { font-size: 40px; }
+  .fs-82 { font-size: 41px; }
+  .fs-84 { font-size: 42px; }
+  .fs-86 { font-size: 43px; }
+  .fs-88 { font-size: 44px; }
+  .fs-90 { font-size: 45px; }
+  .fs-92 { font-size: 46px; }
+  .fs-94 { font-size: 47px; }
+  .fs-96 { font-size: 48px; }
+  .fs-98 { font-size: 49px; }
+  .fs-100 { font-size: 50px; }
+  .m-fs-10 { font-size: 5px; }
+  .m-fs-12 { font-size: 6px; }
+  .m-fs-14 { font-size: 7px; }
+  .m-fs-16 { font-size: 8px; }
+  .m-fs-18 { font-size: 9px; }
+  .m-fs-20 { font-size: 10px; }
+  .m-fs-22 { font-size: 11px; }
+  .m-fs-24 { font-size: 12px; }
+  .m-fs-26 { font-size: 13px; }
+  .m-fs-28 { font-size: 14px; }
+  .m-fs-30 { font-size: 15px; }
+  .m-fs-32 { font-size: 16px; }
+  .m-fs-34 { font-size: 17px; }
+  .m-fs-36 { font-size: 18px; }
+  .m-fs-38 { font-size: 19px; }
+  .m-fs-40 { font-size: 20px; }
+  .m-fs-42 { font-size: 21px; }
+  .m-fs-44 { font-size: 22px; }
+  .m-fs-46 { font-size: 23px; }
+  .m-fs-48 { font-size: 24px; }
+  .m-fs-50 { font-size: 25px; }
+  .m-fs-52 { font-size: 26px; }
+  .m-fs-54 { font-size: 27px; }
+  .m-fs-56 { font-size: 28px; }
+  .m-fs-58 { font-size: 29px; }
+  .m-fs-60 { font-size: 30px; }
+  .m-fs-62 { font-size: 31px; }
+  .m-fs-64 { font-size: 32px; }
+  .m-fs-66 { font-size: 33px; }
+  .m-fs-68 { font-size: 34px; }
+  .m-fs-70 { font-size: 35px; }
+  .m-fs-72 { font-size: 36px; }
+  .m-fs-74 { font-size: 37px; }
+  .m-fs-76 { font-size: 38px; }
+  .m-fs-78 { font-size: 39px; }
+  .m-fs-80 { font-size: 40px; }
+  .m-fs-82 { font-size: 41px; }
+  .m-fs-84 { font-size: 42px; }
+  .m-fs-86 { font-size: 43px; }
+  .m-fs-88 { font-size: 44px; }
+  .m-fs-90 { font-size: 45px; }
+  .m-fs-92 { font-size: 46px; }
+  .m-fs-94 { font-size: 47px; }
+  .m-fs-96 { font-size: 48px; }
+  .m-fs-98 { font-size: 49px; }
+  .m-fs-100 { font-size: 50px; } }
+
+/*font-Weight*/
+.fw-100 { font-weight: 100; }
+
+.fw-200 { font-weight: 200; }
+
+.fw-300 { font-weight: 300; }
+
+.fw-400 { font-weight: 400; }
+
+.fw-500 { font-weight: 500; }
+
+.fw-600 { font-weight: 600; }
+
+.fw-700 { font-weight: 700; }
+
+.fw-800 { font-weight: 800; }
+
+.fw-900 { font-weight: 900; }
