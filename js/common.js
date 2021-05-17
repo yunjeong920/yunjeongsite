@@ -1,6 +1,7 @@
 function scrollHandler() {
-  if ($(window).scrollTop() >= $(".about").position().top) {
+  if ($(window).scrollTop() >= $(".profile").position().top) {
     $(".menu-right button").css("color","#4a4a4a");
+    $(".navbar img").attr("src","./img/yunlogo2.png");
 
     $(".skill").each(function() {
       var skill = $(this);
@@ -9,6 +10,7 @@ function scrollHandler() {
     });
   }else {
     $(".menu-right button").css("color","white");
+    $(".navbar img").attr("src","./img/yunlogo.png");
   }
   $("section").each(function() {
     if($(window).scrollTop() >= $(this).position().top){
@@ -22,9 +24,13 @@ scrollHandler();
 //섹션 스크롤
 $(".menu-right button").on("click", function() {
   var id = $(this).attr("id");
-  if (id == "about-btn") {
+  if (id == "profile-btn") {
+    $("html, body").animate({scrollTop: $(".profile").position().top}, 1000)
+  }else if (id == "about-btn") {
     $("html, body").animate({scrollTop: $(".about").position().top}, 1000)
-  }else if (id == "contact-btn") {
-    $("html, body").animate({scrollTop: $(".contact").position().top})
+  }else if(id == "port-btn") {
+    $("html, body").animate({scrollTop: $(".portfolio").position().top}, 1000)
+  }else if(id == "contact-btn") {
+    $("html, body").animate({scrollTop: $(".contact").position().top}, 1000)
   }
 });

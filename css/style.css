@@ -4,8 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  min-width: 768px;
+  min-width: 500px;
 }
 
 /* navbar */
@@ -21,6 +20,8 @@ body {
 }
 
 .navbar img {
+  width: 150px;
+  height: auto;
   vertical-align: middle;
 }
 
@@ -37,7 +38,7 @@ body {
 
 .navbar .menu-right li button {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   text-decoration: none;
   transition: color 1s;
@@ -46,15 +47,23 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  font-family: 'Montserrat';
+}
+.navbar .menu-right li:nth-child(3){
+  margin-left: 40px;
+}
+
+.navbar .menu-right li:nth-child(2){
+  margin-left: 40px;
 }
 
 .navbar .menu-right li:last-child {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 /* vertical center */
 
-.helper {
+.wrap {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -72,7 +81,8 @@ body {
 /* header */
 
 .header {
-  background-image: url('../img/images.png');
+  background-image: url('../img/main-bg10.jpg');
+  /* background: black; */
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -81,16 +91,83 @@ body {
 }
 
 .header h1 {
-  font-size: 40px;
-  margin: 0;
+  /* margin: 0; */
   margin-bottom: 33px;
 }
 
 .header h2 {
-  font-size: 20px;
-  margin: 0;
-  font-weight: normal;
+  /* margin: 0; */
+  font-weight: bold;
 }
+
+/* profile */
+
+.profile {
+  height: 100vh;
+  min-height: 600px;
+  text-align: center;
+}
+
+.profile h3 {
+  font-size: 40px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.profile p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.profile .skillset {
+  display: inline-block;
+}
+
+.profile .skill:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.profile .skill .title {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.profile .skill .bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 646px;
+  height: 33px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  position: relative;
+  line-height: 33px;
+}
+
+.profile .skill .bar .inner-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33px;
+  background: #bbe6ff;
+  border-radius: 25px;
+}
+
+.profile .skill .bar .percentage {
+  font-size: 14px;
+  color: #9b9b9b;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+
 
 /* about */
 
@@ -152,6 +229,74 @@ body {
 }
 
 .about .skill .bar .percentage {
+  font-size: 14px;
+  color: #9b9b9b;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+
+
+
+.portfolio {
+  height: 100vh;
+  min-height: 600px;
+  text-align: center;
+}
+
+.portfolio h3 {
+  font-size: 40px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.portfolio p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.portfoliot .skillset {
+  display: inline-block;
+}
+
+.portfolio .skill:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.portfolio .skill .title {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.portfolio .skill .bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 646px;
+  height: 33px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  position: relative;
+  line-height: 33px;
+}
+
+.portfolio .skill .bar .inner-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33px;
+  background: #bbe6ff;
+  border-radius: 25px;
+}
+
+.portfolio .skill .bar .percentage {
   font-size: 14px;
   color: #9b9b9b;
   position: absolute;

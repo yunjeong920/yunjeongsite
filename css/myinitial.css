@@ -1,4 +1,106 @@
 @charset "UTF-8";
+body{ font-family: 'NanumSquare', 'GmarketSansMedium', 'Montserrat', 'Montaga', sans-serif; color: #666666; }
+body{ color: #666666; }
+*{ margin: 0; padding: 0; }
+ul,ol{ list-style: none; }
+a{ text-decoration: none; color: #666666; }
+
+html{
+	color:#000;
+	background:#FFF;
+}
+
+/* 플렉스 컨테이너에 적용. 플렉스 컨테이너 생성
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+
+플렉스 컨테이너에 적용. 주축 column 설정.
+-webkit-box-orient: vertical;
+-ms-flex-direction: column;
+flex-direction: column;
+
+플렉스 컨테이너에 적용. 아이템 교차축 center 정렬.
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+
+플렉스 컨테이너에 적용. 아이템 주축 center 정렬.
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+
+플렉스 컨테이너에 적용. 아이템 주축 space-between 정렬.
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+
+플렉스 아이템에 적용. 확장 지수 설정.
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex-grow: 1;
+
+플렉스 컨테이너에 적용. 주축 row 설정.
+-webkit-box-orient: horizontal;
+-ms-flex-direction: row;
+flex-direction: row;
+
+플렉스 컨테이너에 적용. 주축 row-reverse 설정.
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+-ms-flex-direction: row-reverse;
+flex-direction: row-reverse;
+
+플렉스 컨테이너에 적용. 주축 column-reverse 설정.
+-webkit-box-orient: vertical;
+-webkit-box-direction: reverse;
+-ms-flex-direction: column-reverse;
+flex-direction: column-reverse;
+
+플렉스 컨테이너에 적용. 감싸기(줄바꿈) 금지 설정.
+-webkit-box-lines: single;
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+
+플렉스 컨테이너에 적용. 감싸기(줄바꿈) 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
+<del>-webkit-box-lines: multiple;</del>
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+플렉스 아이템에 적용. 아이템 정렬 순서 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
+<del>-webkit-box-ordinal-group: 1;</del>
+-ms-flex-order: 1;
+order: 1;
+
+플렉스 컨테이너에 적용. 아이템 주축 start 정렬.
+-webkit-box-pack: start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+
+플렉스 컨테이너에 적용. 아이템 주축 end 정렬.
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+
+플렉스 컨테이너에 적용. 아이템 교차축 start 정렬.
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+
+플렉스 컨테이너에 적용. 아이템 교차축 end 정렬.
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+
+플렉스 컨테이너에 적용. 아이템 교차축 stretch 정렬.
+-webkit-box-align: stretch;
+-ms-flex-align: stretch;
+align-items: stretch;
+
+플렉스 컨테이너에 적용. 아이템 교차축 baseline 정렬.
+-webkit-box-align: baseline;
+-ms-flex-align: baseline;
+align-items: baseline; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @font-face {
@@ -19,12 +121,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 .nanumsquare {
     font-family: 'NanumSquare', sans-serif !important;
@@ -35,13 +131,21 @@
     font-weight: normal;
     font-style: normal;
 }
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-.nanumsquare {
-    font-family: 'NanumSquare', sans-serif !important;
-}
 @font-face {
     font-family: 'ELAND_Choice_M';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+     font-family: 'locus_sangsang';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: 'MaplestoryOTFLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -49,16 +153,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body{ font-family: 'Noto Sans KR' sans-serif; color: #666666; }
-body{ color: #666666; }
-*{ margin: 0; padding: 0; }
-ul,ol{ list-style: none; }
-a{ text-decoration: none; color: #666666; }
 
-html{
-	color:#000;
-	background:#FFF;
-}
 /*
 	TODO remove settings on BODY since we can't namespace it.
 */
@@ -66,135 +161,69 @@ html{
 	TODO test putting a class on HEAD.
 		- Fails on FF.
 */
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-	margin:0;
-	padding:0;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,
-img {
-	border:0;
-}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,
+th,td {margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
 */
-address,
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
 caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-	font-style:normal;
-	font-weight:normal;
-}
-
-ol,
-ul {
-	list-style:none;
-}
-
-caption,
-th {
-	text-align:left;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size:100%;
-	font-weight:normal;
-}
-q:before,
-q:after {
-	content:'';
-}
-abbr,
-acronym {
-	border:0;
-	font-variant:normal;
-}
+th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
 /* to preserve line-height and selector appearance */
-sup {
-	vertical-align:text-top;
-}
-sub {
-	vertical-align:text-bottom;
-}
-input,
-textarea,
-select {
-	font-family:inherit;
-	font-size:inherit;
-	font-weight:inherit;
-}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select {font-family:inherit;font-size:inherit;font-weight:inherit;}
 /*to enable resizing for IE*/
-input,
-textarea,
-select {
-	*font-size:100%;
-}
+input,textarea,select {*font-size:100%;}
 /*because legend doesn't inherit in IE */
-legend {
-	color:#000;
-}
+legend {color:#000;}
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="image"],
+input[type="tel"],
+button,
+select,
+textarea{-webkit-border-radius:0;-webkit-appearance:none;}
+
+input, textarea, button {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+
+input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
+
 /* 폰트 컬러 */
-.ftcolor01{color:#32a2db}
-.ftcolor02{color:#e28223}
-.ftcolor03{color:#6e73dd}
-.ftcolor04{color:#ff194a}
-.ftcolor05{color:#ccc}
-.ftcolor06{color:#666;}
+.c-black{color:#000000;}
+.c-white{color:#ffffff;}
+.c-3{color:#6e73dd;}
+.c-4{color:#ff194a;}
+.c-5{color:#ccc;}
+.c-6{color:#666;}
 
-.text-color-01 { color: #c27a34; }
-
-.text-color-02 { color: #383431; }
-
-.text-color-sub { color: #666666; }
-
-.text-color-sub2 { color: #ccc; }
-
+/* 간격 */
+.letter{letter-spacing: 0.3em;}
 
 /* 폰트사이즈 */
-.nsk-font { font-family: 'Noto Sans KR'; }
+.noto-font { font-family: 'Noto Sans KR'; }
 
-.mtg-font { font-family: 'Montaga'; font-weight: 400; }
+.montaga-font { font-family: 'Montaga'; font-weight: 400; }
 
-.mts-font { font-family: 'Montserrat'; }
+.montserrat-font { font-family: 'Montserrat'; }
+
+.maple-font { font-family: 'MaplestoryOTFLight'; }
+
+.gmarket-font { font-family: 'GmarketSansMedium'; }
+
+.nanum-font{ font-family: 'NanumSquare', sans-serif; }
+
+.locus-font{ font-family: 'locus_sangsang'; }
 
 /*font-size*/
 .fs-10 { font-size: 10px; }
@@ -289,7 +318,8 @@ legend {
 
 .fs-100 { font-size: 100px; }
 
-@media all and (max-width: 1200px) { .fs-10 { font-size: 8px; }
+@media all and (max-width: 1200px) {
+	.fs-10 { font-size: 8px; }
   .fs-12 { font-size: 9px; }
   .fs-14 { font-size: 11px; }
   .fs-16 { font-size: 12px; }
@@ -335,54 +365,10 @@ legend {
   .fs-96 { font-size: 72px; }
   .fs-98 { font-size: 74px; }
   .fs-100 { font-size: 75px; }
-  .m-fs-10 { font-size: 8px; }
-  .m-fs-12 { font-size: 9px; }
-  .m-fs-14 { font-size: 11px; }
-  .m-fs-16 { font-size: 12px; }
-  .m-fs-18 { font-size: 14px; }
-  .m-fs-20 { font-size: 15px; }
-  .m-fs-22 { font-size: 17px; }
-  .m-fs-24 { font-size: 18px; }
-  .m-fs-26 { font-size: 20px; }
-  .m-fs-28 { font-size: 21px; }
-  .m-fs-30 { font-size: 23px; }
-  .m-fs-32 { font-size: 24px; }
-  .m-fs-34 { font-size: 26px; }
-  .m-fs-36 { font-size: 27px; }
-  .m-fs-38 { font-size: 29px; }
-  .m-fs-40 { font-size: 30px; }
-  .m-fs-42 { font-size: 32px; }
-  .m-fs-44 { font-size: 33px; }
-  .m-fs-46 { font-size: 35px; }
-  .m-fs-48 { font-size: 36px; }
-  .m-fs-50 { font-size: 38px; }
-  .m-fs-52 { font-size: 39px; }
-  .m-fs-54 { font-size: 41px; }
-  .m-fs-56 { font-size: 42px; }
-  .m-fs-58 { font-size: 44px; }
-  .m-fs-60 { font-size: 45px; }
-  .m-fs-62 { font-size: 47px; }
-  .m-fs-64 { font-size: 48px; }
-  .m-fs-66 { font-size: 50px; }
-  .m-fs-68 { font-size: 51px; }
-  .m-fs-70 { font-size: 53px; }
-  .m-fs-72 { font-size: 54px; }
-  .m-fs-74 { font-size: 56px; }
-  .m-fs-76 { font-size: 57px; }
-  .m-fs-78 { font-size: 59px; }
-  .m-fs-80 { font-size: 60px; }
-  .m-fs-82 { font-size: 62px; }
-  .m-fs-84 { font-size: 63px; }
-  .m-fs-86 { font-size: 65px; }
-  .m-fs-88 { font-size: 66px; }
-  .m-fs-90 { font-size: 68px; }
-  .m-fs-92 { font-size: 69px; }
-  .m-fs-94 { font-size: 71px; }
-  .m-fs-96 { font-size: 72px; }
-  .m-fs-98 { font-size: 74px; }
-  .m-fs-100 { font-size: 75px; } }
+  }
 
-@media all and (max-width: 768px) { .fs-10 { font-size: 7px; }
+@media all and (max-width: 770px) {
+	.fs-10 { font-size: 7px; }
   .fs-12 { font-size: 8px; }
   .fs-14 { font-size: 9px; }
   .fs-16 { font-size: 10px; }
@@ -428,54 +414,10 @@ legend {
   .fs-96 { font-size: 62px; }
   .fs-98 { font-size: 64px; }
   .fs-100 { font-size: 65px; }
-  .m-fs-10 { font-size: 7px; }
-  .m-fs-12 { font-size: 8px; }
-  .m-fs-14 { font-size: 9px; }
-  .m-fs-16 { font-size: 10px; }
-  .m-fs-18 { font-size: 12px; }
-  .m-fs-20 { font-size: 13px; }
-  .m-fs-22 { font-size: 14px; }
-  .m-fs-24 { font-size: 16px; }
-  .m-fs-26 { font-size: 17px; }
-  .m-fs-28 { font-size: 18px; }
-  .m-fs-30 { font-size: 20px; }
-  .m-fs-32 { font-size: 21px; }
-  .m-fs-34 { font-size: 22px; }
-  .m-fs-36 { font-size: 23px; }
-  .m-fs-38 { font-size: 25px; }
-  .m-fs-40 { font-size: 26px; }
-  .m-fs-42 { font-size: 27px; }
-  .m-fs-44 { font-size: 29px; }
-  .m-fs-46 { font-size: 30px; }
-  .m-fs-48 { font-size: 31px; }
-  .m-fs-50 { font-size: 33px; }
-  .m-fs-52 { font-size: 34px; }
-  .m-fs-54 { font-size: 35px; }
-  .m-fs-56 { font-size: 36px; }
-  .m-fs-58 { font-size: 38px; }
-  .m-fs-60 { font-size: 39px; }
-  .m-fs-62 { font-size: 40px; }
-  .m-fs-64 { font-size: 42px; }
-  .m-fs-66 { font-size: 43px; }
-  .m-fs-68 { font-size: 44px; }
-  .m-fs-70 { font-size: 46px; }
-  .m-fs-72 { font-size: 47px; }
-  .m-fs-74 { font-size: 48px; }
-  .m-fs-76 { font-size: 49px; }
-  .m-fs-78 { font-size: 51px; }
-  .m-fs-80 { font-size: 52px; }
-  .m-fs-82 { font-size: 53px; }
-  .m-fs-84 { font-size: 55px; }
-  .m-fs-86 { font-size: 56px; }
-  .m-fs-88 { font-size: 57px; }
-  .m-fs-90 { font-size: 59px; }
-  .m-fs-92 { font-size: 60px; }
-  .m-fs-94 { font-size: 61px; }
-  .m-fs-96 { font-size: 62px; }
-  .m-fs-98 { font-size: 64px; }
-  .m-fs-100 { font-size: 65px; } }
+   }
 
-@media all and (max-width: 470px) { .fs-10 { font-size: 5px; }
+@media all and (max-width: 500px) {
+	.fs-10 { font-size: 5px; }
   .fs-12 { font-size: 6px; }
   .fs-14 { font-size: 7px; }
   .fs-16 { font-size: 8px; }
@@ -521,52 +463,7 @@ legend {
   .fs-96 { font-size: 48px; }
   .fs-98 { font-size: 49px; }
   .fs-100 { font-size: 50px; }
-  .m-fs-10 { font-size: 5px; }
-  .m-fs-12 { font-size: 6px; }
-  .m-fs-14 { font-size: 7px; }
-  .m-fs-16 { font-size: 8px; }
-  .m-fs-18 { font-size: 9px; }
-  .m-fs-20 { font-size: 10px; }
-  .m-fs-22 { font-size: 11px; }
-  .m-fs-24 { font-size: 12px; }
-  .m-fs-26 { font-size: 13px; }
-  .m-fs-28 { font-size: 14px; }
-  .m-fs-30 { font-size: 15px; }
-  .m-fs-32 { font-size: 16px; }
-  .m-fs-34 { font-size: 17px; }
-  .m-fs-36 { font-size: 18px; }
-  .m-fs-38 { font-size: 19px; }
-  .m-fs-40 { font-size: 20px; }
-  .m-fs-42 { font-size: 21px; }
-  .m-fs-44 { font-size: 22px; }
-  .m-fs-46 { font-size: 23px; }
-  .m-fs-48 { font-size: 24px; }
-  .m-fs-50 { font-size: 25px; }
-  .m-fs-52 { font-size: 26px; }
-  .m-fs-54 { font-size: 27px; }
-  .m-fs-56 { font-size: 28px; }
-  .m-fs-58 { font-size: 29px; }
-  .m-fs-60 { font-size: 30px; }
-  .m-fs-62 { font-size: 31px; }
-  .m-fs-64 { font-size: 32px; }
-  .m-fs-66 { font-size: 33px; }
-  .m-fs-68 { font-size: 34px; }
-  .m-fs-70 { font-size: 35px; }
-  .m-fs-72 { font-size: 36px; }
-  .m-fs-74 { font-size: 37px; }
-  .m-fs-76 { font-size: 38px; }
-  .m-fs-78 { font-size: 39px; }
-  .m-fs-80 { font-size: 40px; }
-  .m-fs-82 { font-size: 41px; }
-  .m-fs-84 { font-size: 42px; }
-  .m-fs-86 { font-size: 43px; }
-  .m-fs-88 { font-size: 44px; }
-  .m-fs-90 { font-size: 45px; }
-  .m-fs-92 { font-size: 46px; }
-  .m-fs-94 { font-size: 47px; }
-  .m-fs-96 { font-size: 48px; }
-  .m-fs-98 { font-size: 49px; }
-  .m-fs-100 { font-size: 50px; } }
+   }
 
 /*font-Weight*/
 .fw-100 { font-weight: 100; }
