@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 500px;
 }
 
@@ -49,6 +49,11 @@ body {
   cursor: pointer;
   font-family: 'Montserrat';
 }
+
+.navbar .menu-right li:nth-child(4){
+  margin-left: 40px;
+}
+
 .navbar .menu-right li:nth-child(3){
   margin-left: 40px;
 }
@@ -61,17 +66,18 @@ body {
   margin-left: 40px;
 }
 
-/* vertical center */
 
 .wrap {
-  display: inline-block;
   height: 100%;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.vertical-center {
+.page {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: center;
   color: white;
   opacity: 0;
   position: relative;
@@ -86,13 +92,13 @@ body {
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  min-height: 600px;
   text-align: center;
 }
 
 .header h1 {
   /* margin: 0; */
   margin-bottom: 33px;
+  font-weight: bold;
 }
 
 .header h2 {
@@ -100,12 +106,17 @@ body {
   font-weight: bold;
 }
 
+.header h2 a{
+  color: #d4e5fa;
+
+}
+
 /* profile */
 
 .profile {
   height: 100vh;
-  min-height: 600px;
   text-align: center;
+  background-color: #f7fbfc;
 }
 
 .profile h3 {
@@ -122,58 +133,11 @@ body {
   margin-bottom: 61px;
 }
 
-.profile .skillset {
-  display: inline-block;
-}
-
-.profile .skill:not(:last-child) {
-  margin-bottom: 17px;
-}
-
-.profile .skill .title {
-  display: inline-block;
-  width: 50px;
-  vertical-align: middle;
-  margin-right: 15px;
-  font-size: 16px;
-  color: #4a4a4a;
-}
-
-.profile .skill .bar {
-  display: inline-block;
-  vertical-align: middle;
-  width: 646px;
-  height: 33px;
-  border-radius: 25px;
-  background-color: #f9f9f9;
-  position: relative;
-  line-height: 33px;
-}
-
-.profile .skill .bar .inner-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 33px;
-  background: #bbe6ff;
-  border-radius: 25px;
-}
-
-.profile .skill .bar .percentage {
-  font-size: 14px;
-  color: #9b9b9b;
-  position: absolute;
-  right: 20px;
-  top: 0;
-}
-
-
 
 /* about */
 
 .about {
   height: 100vh;
-  min-height: 600px;
   text-align: center;
 }
 
@@ -184,12 +148,12 @@ body {
   margin-bottom: 37px;
 }
 
-.about p {
+/* .about p {
   font-size: 16px;
   color: #4a4a4a;
   margin: 0;
   margin-bottom: 61px;
-}
+} */
 
 .about .skillset {
   display: inline-block;
@@ -202,8 +166,9 @@ body {
 .about .skill .title {
   display: inline-block;
   width: 50px;
+  text-align: left;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 100px;
   font-size: 16px;
   color: #4a4a4a;
 }
@@ -237,12 +202,12 @@ body {
 }
 
 
-
+/* 포트폴리오 */
 
 .portfolio {
   height: 100vh;
-  min-height: 600px;
   text-align: center;
+  background-color: #d6e6f2;
 }
 
 .portfolio h3 {
@@ -259,50 +224,6 @@ body {
   margin-bottom: 61px;
 }
 
-.portfoliot .skillset {
-  display: inline-block;
-}
-
-.portfolio .skill:not(:last-child) {
-  margin-bottom: 17px;
-}
-
-.portfolio .skill .title {
-  display: inline-block;
-  width: 50px;
-  vertical-align: middle;
-  margin-right: 15px;
-  font-size: 16px;
-  color: #4a4a4a;
-}
-
-.portfolio .skill .bar {
-  display: inline-block;
-  vertical-align: middle;
-  width: 646px;
-  height: 33px;
-  border-radius: 25px;
-  background-color: #f9f9f9;
-  position: relative;
-  line-height: 33px;
-}
-
-.portfolio .skill .bar .inner-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 33px;
-  background: #bbe6ff;
-  border-radius: 25px;
-}
-
-.portfolio .skill .bar .percentage {
-  font-size: 14px;
-  color: #9b9b9b;
-  position: absolute;
-  right: 20px;
-  top: 0;
-}
 
 /* contact */
 
