@@ -1,6 +1,6 @@
 function scrollHandler() {
   if ($(window).scrollTop() >= $(".profile").position().top) {
-    $(".menu-right button").css("color","#4a4a4a");
+    $(".menu-right button").css("color","#222222");
     $(".navbar img").attr("src","./img/yunlogo2.png");
   }else {
     $(".menu-right button").css("color","white");
@@ -18,7 +18,7 @@ function scrollHandler() {
       var skill = $(this);
       var percentage = skill.find(".percentage").text();
       skill.find(".inner-bar").animate({width: percentage}, 1200);
-    });  
+    });
   }
 }
 
