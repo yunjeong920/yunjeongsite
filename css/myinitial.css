@@ -215,9 +215,9 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
 .noto-font { font-family: 'Noto Sans KR'; }
 
 .montaga-font { font-family: 'Montaga'; font-weight: 400; }
-
+/* 영문 딱딱함 */
 .montserrat-font { font-family: 'Montserrat'; }
-
+/* 영문 동글 */
 .maple-font { font-family: 'MaplestoryOTFLight'; }
 
 .gmarket-font { font-family: 'GmarketSansMedium'; }
