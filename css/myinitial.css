@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body{ font-family: 'NEXON Lv1 Gothic OTF', 'GmarketSansMedium', 'Montserrat', 'Montaga', sans-serif; color: #666666; }
+body{ font-family: 'GmarketSansMedium', 'Montserrat', sans-serif; color: #666666; }
 body{ color: #666666; }
 *{ margin: 0; padding: 0; }
 ul,ol{ list-style: none; }
@@ -132,28 +132,35 @@ align-items: baseline; */
     font-style: normal;
 }
 @font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'ELAND_Choice_M';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-     font-family: 'locus_sangsang';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-@font-face {
-    font-family: 'MaplestoryOTFLight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*
 	TODO remove settings on BODY since we can't namespace it.
 */
@@ -168,7 +175,7 @@ fieldset,img {border:0;}
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
 */
 address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
-ol,ul {list-style:none;}
+ol,ul,li,a {list-style:none;}
 caption,
 th {text-align:left;}
 h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
@@ -215,16 +222,14 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
 .noto-font { font-family: 'Noto Sans KR'; }
 
 .montaga-font { font-family: 'Montaga'; font-weight: 400; }
-/* 영문 딱딱함 */
-.montserrat-font { font-family: 'Montserrat'; }
-/* 영문 동글 */
-.maple-font { font-family: 'MaplestoryOTFLight'; }
 
+.montserrat-font { font-family: 'Montserrat'; }
+/* 둥근 영어폰트 */
 .gmarket-font { font-family: 'GmarketSansMedium'; }
 
 .nanum-font{ font-family: 'NanumSquare', sans-serif; }
 
-.locus-font{ font-family: 'locus_sangsang'; }
+.ari-font{ font-family: 'Arita-dotum-Medium'; }
 
 .nexon-font{ font-family: 'NEXON Lv1 Gothic OTF'; }
 
@@ -321,14 +326,14 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
 
 .fs-100 { font-size: 100px; }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 960px) {
 	.fs-10 { font-size: 8px; }
   .fs-12 { font-size: 9px; }
   .fs-14 { font-size: 11px; }
   .fs-16 { font-size: 12px; }
   .fs-18 { font-size: 14px; }
   .fs-20 { font-size: 15px; }
-  .fs-22 { font-size: 17px; }
+  .fs-22 { font-size: 16px; }
   .fs-24 { font-size: 18px; }
   .fs-26 { font-size: 20px; }
   .fs-28 { font-size: 21px; }
@@ -370,7 +375,7 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
   .fs-100 { font-size: 75px; }
   }
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 520px) {
 	.fs-10 { font-size: 7px; }
   .fs-12 { font-size: 8px; }
   .fs-14 { font-size: 9px; }
@@ -419,7 +424,7 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
   .fs-100 { font-size: 65px; }
    }
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
 	.fs-10 { font-size: 5px; }
   .fs-12 { font-size: 6px; }
   .fs-14 { font-size: 7px; }
@@ -466,7 +471,7 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
   .fs-96 { font-size: 48px; }
   .fs-98 { font-size: 49px; }
   .fs-100 { font-size: 50px; }
-   }
+   } */
 
 /*font-Weight*/
 .fw-100 { font-weight: 100; }

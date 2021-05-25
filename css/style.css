@@ -87,8 +87,7 @@ body {
 /* header */
 
 .header {
-  background-image: url('../img/main-bg2.png');
-  /* background: black; */
+  background-image: url('../img/main-bg10.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -131,13 +130,9 @@ section{
 .profile {
   height: 100vh;
   text-align: center;
-  background-color: #e8ded2;
-  /* background-color: #f0e4d7; */
-  /* background-color: #f7f2e7; */
-  /* background-color: #f0ece3; */
-  /* background-color: #f8f3eb; */
-  /* background-color: #f0decb; */
-  /* background-color: #f6eedf; */
+  background-color: #bbbfca;
+  /* background-color: #d6e0f0; */
+  /* background-color: #e1f2fb; */
 }
 
 .profile h3 {
@@ -250,8 +245,7 @@ section{
 .portfolio {
   height: 100vh;
   text-align: center;
-  /* background-color: #f7dad9; */
-  background-color: #d9e4dd;
+  background-color: #bbbfca;
 }
 
 .portfolio h3 {
