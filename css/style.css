@@ -7,6 +7,37 @@ body {
   min-width: 500px;
 }
 
+input[type=checkbox]#gnbcheck{ display: none; }
+
+#gnbbtn{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  z-index: 900;
+  display: none;
+}
+
+/* mobile button line style */
+#gnbbtn > span{
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #4a4a4a;
+  top: 16px;
+  transform: translateY(-50%);
+  /* transition: .5s; */
+}
+
+#gnbbtn > span:nth-child(1){
+  top: 8px;
+}
+
+#gnbbtn > span:nth-child(3){
+  top: 24px;
+}
+
 /* navbar */
 
 .navbar {
@@ -21,7 +52,7 @@ body {
 }
 
 .navbar img {
-  width: 150px;
+  width: 130px;
   height: auto;
   vertical-align: middle;
 }
@@ -175,7 +206,7 @@ section{
   height: 100vh;
   text-align: center;
   /* background-color: #f9f9f9; */
-  background: url('../img/sub-bg1.png');
+  background: url('../img/sub-bg2.png');
   background-size: cover;
   background-attachment: fixed;
 }
