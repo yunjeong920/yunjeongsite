@@ -1,5 +1,5 @@
 function scrollHandler() {
-  if ($(window).scrollTop() >= $(".profile").position().top) {
+  if ($(window).scrollTop() >= $(".portfolio").position().top) {
     $(".menu-right button").css("color","#222222");
     $(".navbar img").attr("src","./img/yunlogo2.png");
   }else {
@@ -29,12 +29,12 @@ $(".menu-right button").on("click", function() {
   var id = $(this).attr("id");
   if (id == "header-btn") {
     $("html, body").animate({scrollTop: $(".header").position().top}, 1000)
-  }else if(id == "profile-btn") {
-    $("html, body").animate({scrollTop: $(".profile").position().top}, 1000)
-  }else if (id == "about-btn") {
-    $("html, body").animate({scrollTop: $(".about").position().top}, 1000)
   }else if(id == "port-btn") {
     $("html, body").animate({scrollTop: $(".portfolio").position().top}, 1000)
+  }else if (id == "about-btn") {
+    $("html, body").animate({scrollTop: $(".about").position().top}, 1000)
+  }else if(id == "profile-btn") {
+    $("html, body").animate({scrollTop: $(".profile").position().top}, 1000)
   }else if(id == "contact-btn") {
     $("html, body").animate({scrollTop: $(".contact").position().top}, 1000)
   }

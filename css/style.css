@@ -1,3 +1,12 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -145,59 +154,103 @@ input[type=checkbox]#gnbcheck{ display: none; }
 
 }
 
-/* profile */
-section{
-  font-family: 'GmarketSansMedium';
-}
 
-.line{
-  width: 50px;
-  height: 4px;
-  background: #fff;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
+/* 포트폴리오 */
 
-.profile {
-  height: 100vh;
+.portfolio {
+  min-height: 100vh;
   text-align: center;
   background-color: #bbbfca;
-  /* background-color: #d6e0f0; */
-  /* background-color: #e1f2fb; */
 }
 
-.profile h3 {
+.portfolio h3 {
   color: #4a4a4a;
   margin: 0;
+  margin-top: 130px;
   margin-bottom: 37px;
 }
 
-.profile .profile-left p {
+.portfolio p {
   color: #4a4a4a;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 61px;
 }
 
-.profile .pro-wrap{
+.card-wrap{
+  height: 100%;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.profile .profile-left{
+.card-wrap .card{
+  width: 540px;
+  height: 290px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card-wrap .card:hover{
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-wrap .card h4{
+  color: #3a3a3a;
+}
+
+.card-wrap .card h4:nth-of-type(2){
+  margin-bottom: 20px;
+}
+
+.card-wrap .card p{
+  margin-bottom: 10px;
+}
+
+.card-wrap .card button{
+  border: none;
+  width: 100px;
+}
+
+.card-wrap .card button a{
+  height: 40px;
+  line-height: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.card-wrap .card .card1{
   width: 500px;
-  margin: 0 auto;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.profile .pro-img{
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  background: white;
-  margin: 0 auto;
+.card-wrap .card .card1 .card-img{
+  width: 250px;
+  height: 250px;
+  background: url('../img/port/port-img01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.profile .profile-right{
-  color: #4a4a4a;
-  text-align: left;
+.card-wrap .card .card1 .img2{
+  background: url('../img/port/port-img02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-wrap .card .card1 .card-text{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* about */
@@ -264,34 +317,67 @@ section{
 
 .about .skill .bar .percentage {
   font-size: 14px;
-  color: #9b9b9b;
+  color: #888;
   position: absolute;
   right: 20px;
   top: 0;
 }
 
 
-/* 포트폴리오 */
+/* profile */
+section{
+  font-family: 'GmarketSansMedium';
+}
 
-.portfolio {
+.line{
+  width: 50px;
+  height: 4px;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.profile {
   height: 100vh;
   text-align: center;
   background-color: #bbbfca;
+  /* background-color: #d6e0f0; */
+  /* background-color: #e1f2fb; */
 }
 
-.portfolio h3 {
+.profile h3 {
   color: #4a4a4a;
   margin: 0;
   margin-bottom: 37px;
 }
 
-.portfolio p {
-  font-size: 16px;
+.profile .profile-left p {
   color: #4a4a4a;
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 30px;
 }
 
+.profile .pro-wrap{
+  display: flex;
+}
+
+.profile .profile-left{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.profile .pro-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: white;
+  margin: 0 auto;
+}
+
+.profile .profile-right{
+  color: #4a4a4a;
+  text-align: left;
+}
 
 /* contact */
 
