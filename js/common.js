@@ -35,7 +35,5 @@ $(".menu-right button").on("click", function() {
     $("html, body").animate({scrollTop: $(".about").position().top}, 1000)
   }else if(id == "profile-btn") {
     $("html, body").animate({scrollTop: $(".profile").position().top}, 1000)
-  }else if(id == "contact-btn") {
-    $("html, body").animate({scrollTop: $(".contact").position().top}, 1000)
   }
 });

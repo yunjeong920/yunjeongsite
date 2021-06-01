@@ -121,6 +121,12 @@ align-items: baseline; */
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 .nanumsquare {
     font-family: 'NanumSquare', sans-serif !important;
